@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="Fx2_ScriptFx" Version="0.0.0" AllowCompilation="1">
+  <Node FactoryPath="container.chain" ID="Fx2_ScriptFx" Bypassed="0"
+        Name="Fx2_ScriptFx" ShowParameters="1">
+    <Nodes>
+      <Node ID="faust" FactoryPath="core.faust" Bypassed="1" Name="faust">
+        <Properties>
+          <Property ID="ClassId" Value="greyhole"/>
+          <Property ID="NumParameters" Value="0"/>
+        </Properties>
+        <Parameters>
+          <Parameter MinValue="0.001000000047497451" MaxValue="1.450000047683716"
+                     StepSize="0.00009999999747378752" ID="delayTime" Value="0.2000000029802322"/>
+          <Parameter MinValue="0.0" MaxValue="0.9900000095367432" StepSize="0.001000000047497451"
+                     ID="damping" Value="0.0"/>
+          <Parameter MinValue="0.5" MaxValue="3.0" StepSize="0.00009999999747378752"
+                     ID="size" Value="1.0"/>
+          <Parameter MinValue="0.0" MaxValue="0.9900000095367432" StepSize="0.00009999999747378752"
+                     ID="diffusion" Value="0.5"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                     ID="feedback" Value="0.8999999761581421"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                     ID="modDepth" Value="0.1000000014901161"/>
+          <Parameter MinValue="0.0" MaxValue="10.0" StepSize="0.009999999776482582"
+                     ID="modFreq" Value="2.0"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.05000000074505806"
+                     ID="dry/wet" Automated="1"/>
+        </Parameters>
+        <SwitchTargets/>
+      </Node>
+      <Node ID="faust1" FactoryPath="core.faust" Bypassed="0" Name="faust1">
+        <Properties>
+          <Property ID="ClassId" Value="ReverseDelay"/>
+          <Property ID="NumParameters" Value="0"/>
+        </Properties>
+        <Parameters>
+          <Parameter MinValue="1.0" MaxValue="2000.0" StepSize="1.0" ID="delay_time (ms)"
+                     Value="500.0"/>
+          <Parameter MinValue="0.0" MaxValue="0.9998999834060669" StepSize="0.001000000047497451"
+                     ID="fb" Value="0.0"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                     ID="mix" Value="0.0"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                     ID="pan" Value="0.5"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                     ID="spread" Value="0.0"/>
+        </Parameters>
+        <SwitchTargets/>
+      </Node>
+    </Nodes>
+    <Parameters>
+      <Parameter ID="knbDelayMix" MinValue="0.0" MaxValue="1.0" StepSize="0.05000000074505806"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="faust" ParameterId="dry/wet"/>
+        </Connections>
+      </Parameter>
+    </Parameters>
+  </Node>
+</Network>
