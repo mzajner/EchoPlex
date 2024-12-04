@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/include_juce_graphics.mm \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/include_juce_graphics.mm \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/ernest/HISE/JUCE/modules/juce_graphics/juce_graphics.mm \
   /Users/ernest/HISE/JUCE/modules/juce_graphics/juce_graphics.cpp \
   /Users/ernest/HISE/JUCE/modules/juce_graphics/juce_graphics.h \

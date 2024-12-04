@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/include_hi_dsp_library_01.cpp \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/include_hi_dsp_library_01.cpp \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/ernest/HISE/hi_dsp_library/hi_dsp_library_01.cpp \
   /Users/ernest/HISE/hi_dsp_library/hi_dsp_library.h \
   /Users/ernest/HISE/hi_dsp_library/../hi_tools/hi_tools.h \

@@ -2,18 +2,18 @@ import("stdfaust.lib");
 
 // ================== User Parameters ==================
 // Delay time and feedback controls
-recordLevel = hslider("Record Level", 0.8, 0, 1, 0.01);  // Input scaling
-playbackVolume = hslider("Playback Volume", 1.0, 0, 2, 0.01);  // Output scaling
-delayMs = hslider("Delay (ms)", 300, 1, 1000, 1);  // Delay time control (1-1000 ms)
-repeats = vslider("Feedback [style:knob]", 0.5, 0, 2, 0.01);  // Feedback control (0 to 2)
-bassGain = hslider("Bass Gain (dB)", 0, -12, 12, 0.1);  // Adjustable bass gain
-trebleGain = hslider("Treble Gain (dB)", 0, -12, 12, 0.1);  // Adjustable treble gain
+recordLevel = hslider("Input", 0.8, 0, 1, 0.01);  // Input scaling
+playbackVolume = hslider("Output", 1.0, 0, 2, 0.01);  // Output scaling
+delayMs = hslider("Delay", 300, 1, 1000, 1);  // Delay time control (1-1000 ms)
+repeats = hslider("Repeats", 0.5, 0, 2, 0.01);  // Feedback control (0 to 2)
+bassGain = hslider("BassGain", 0, -12, 12, 0.1);  // Adjustable bass gain
+trebleGain = hslider("TrebleGain", 0, -12, 12, 0.1);  // Adjustable treble gain
 
 // Additional Parameters
 driftIntensity = hslider("DriftIntensity", 1, 0, 10, 0.1);  // Slider for controlling drift intensity (1-10)
-modDepth = vslider("WowDepth [style:knob]", 0.5, 0, 1, 0.01);  // Scales overall drift contribution
-flutterDepthKnob = vslider("FlutterDepth [style:knob]", 0.0001, 0, 0.01, 0.0001);  // Controls flutter depth
-flutterFreqKnob = vslider("FlutterHz [style:knob]", 15, 10, 30, 0.1);  // Controls flutter frequency
+modDepth = hslider("WowDepth", 0.5, 0, 1, 0.01);  // Scales overall drift contribution
+flutterDepthKnob = hslider("FlutterDepth", 0.01, 0.0, 1.0, 0.01);  // Controls flutter depth
+flutterFreqKnob = hslider("FlutterHz", 15, 10, 30, 0.1);  // Controls flutter frequency
 
 // ================== Additional Features ==================
 // Features mentioned in the paper but not directly studied. 
@@ -90,9 +90,9 @@ with {
 // High-frequency flutter modulation
 flutter = sin(sinArg) * ampSec * ma.SR
 with {
-    phaseNoise = (no.noise * flutterDepthKnob) : fi.lowpass6e(200);  // Add subtle noise to phase
+    phaseNoise = (no.noise * (flutterDepthKnob/10000)) : fi.lowpass6e(200);  // Add subtle noise to phase
     sinArg = pulse(flutterFreqKnob) + phaseNoise;  // Generate angular frequency with phase noise
-    ampSec = flutterDepthKnob;  // Flutter depth (amplitude in seconds)
+    ampSec = flutterDepthKnob/10000;  // Flutter depth (amplitude in seconds)
 };
 
 // ================== Total Delay Calculation ==================

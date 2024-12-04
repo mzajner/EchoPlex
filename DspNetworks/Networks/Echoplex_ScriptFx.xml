@@ -1,21 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Network ID="Echoplex_ScriptFx" Version="0.0.0">
+<Network ID="Echoplex_ScriptFx" Version="0.0.0" AllowCompilation="1">
   <Node FactoryPath="container.chain" ID="Echoplex_ScriptFx" Bypassed="0"
         Name="Echoplex_ScriptFx" ShowParameters="1">
     <Nodes>
+      <Node ID="xfader" FactoryPath="control.xfader" Bypassed="0" Name="xfader">
+        <Properties>
+          <Property ID="NumParameters" Value="2"/>
+          <Property ID="Mode" Value="RMS"/>
+        </Properties>
+        <SwitchTargets>
+          <SwitchTarget>
+            <Connections>
+              <Connection NodeId="gain2" ParameterId="Gain"/>
+            </Connections>
+          </SwitchTarget>
+          <SwitchTarget>
+            <Connections>
+              <Connection NodeId="gain3" ParameterId="Gain"/>
+            </Connections>
+          </SwitchTarget>
+        </SwitchTargets>
+        <Parameters>
+          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
+        </Parameters>
+      </Node>
       <Node ID="split" FactoryPath="container.split" Bypassed="0" Name="split">
         <Nodes>
           <Node ID="chain" FactoryPath="container.chain" Bypassed="1" Name="dry">
-            <Nodes/>
+            <Nodes>
+              <Node ID="gain2" FactoryPath="core.gain" Bypassed="0" Name="gain2">
+                <Parameters>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="Gain" DefaultValue="0.0" Automated="1"/>
+                  <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
             <Parameters/>
           </Node>
           <Node ID="chain1" FactoryPath="container.chain" Bypassed="0" Name="wet">
             <Nodes>
-              <Node ID="gain" FactoryPath="core.gain" Bypassed="0" Name="gain">
+              <Node ID="gain3" FactoryPath="core.gain" Bypassed="0" Name="gain3">
                 <Parameters>
                   <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                             SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                             SkewFactor="5.422270774841309" ID="Gain" DefaultValue="0.0" Automated="1"/>
                   <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
                              SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
                   <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
@@ -32,45 +64,37 @@
                   <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
                              ID="UnsyncedTime" DefaultValue="200.0" Automated="1"/>
                 </Parameters>
+                <ModulationTargets>
+                  <Connection NodeId="faust1" ParameterId="Delay"/>
+                </ModulationTargets>
               </Node>
-              <Node ID="faust" FactoryPath="core.faust" Bypassed="0" Name="faust">
+              <Node ID="faust1" FactoryPath="core.faust" Bypassed="0" Name="faust1">
                 <Properties>
                   <Property ID="ClassId" Value="Echoplex_Faust"/>
                   <Property ID="NumParameters" Value="0"/>
                 </Properties>
                 <Parameters>
                   <Parameter MinValue="-12.0" MaxValue="12.0" StepSize="0.1000000014901161"
-                             ID="Bass Gain (dB)" Value="1.788139343261719e-7" DefaultValue="0.0"/>
-                  <Parameter MinValue="1.0" MaxValue="1000.0" StepSize="1.0" ID="Delay (ms)"
-                             Value="455.0" DefaultValue="300.0"/>
+                             ID="BassGain" Automated="1"/>
+                  <Parameter MinValue="1.0" MaxValue="1000.0" StepSize="1.0" ID="Delay" Automated="1"/>
                   <Parameter MinValue="0.0" MaxValue="10.0" StepSize="0.1000000014901161"
-                             ID="DriftIntensity" Value="1.0"/>
-                  <Parameter MinValue="0.0" MaxValue="1.999999955296516" StepSize="0.009999999776482582"
-                             ID="Feedback" Value="0.6199999861419201" DefaultValue="0.5"/>
-                  <Parameter MinValue="0.0" MaxValue="0.009999999776482582" StepSize="0.00009999999747378752"
-                             ID="FlutterDepth" Value="0.0" DefaultValue="0.00009999999747378752"/>
+                             ID="DriftIntensity" Automated="1"/>
+                  <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                             ID="FlutterDepth" DefaultValue="0.009999999776482582" Automated="1"/>
                   <Parameter MinValue="10.0" MaxValue="30.0" StepSize="0.1000000014901161"
-                             ID="FlutterHz" Value="12.10000003129244" DefaultValue="15.0"/>
+                             ID="FlutterHz" DefaultValue="15.0" Automated="1"/>
+                  <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                             ID="Input" DefaultValue="0.800000011920929" Automated="1"/>
                   <Parameter MinValue="0.0" MaxValue="2.0" StepSize="0.009999999776482582"
-                             ID="Playback Volume" Value="1.009999977424741" DefaultValue="1.0"/>
-                  <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
-                             ID="Record Level" Value="0.9999999776482582" DefaultValue="0.800000011920929"/>
+                             ID="Output" DefaultValue="1.0" Automated="1"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="0.009999999776482582"
+                             ID="Repeats" Automated="1"/>
                   <Parameter MinValue="-12.0" MaxValue="12.0" StepSize="0.1000000014901161"
-                             ID="Treble Gain (dB)" Value="1.788139343261719e-7" DefaultValue="0.0"/>
+                             ID="TrebleGain" Automated="1"/>
                   <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
-                             ID="WowDepth" Value="0.0" DefaultValue="0.5"/>
+                             ID="WowDepth" DefaultValue="0.5" Automated="1"/>
                 </Parameters>
                 <SwitchTargets/>
-              </Node>
-              <Node ID="gain1" FactoryPath="core.gain" Bypassed="0" Name="gain1">
-                <Parameters>
-                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                             SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
-                  <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
-                             SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
-                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                             SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
-                </Parameters>
               </Node>
             </Nodes>
             <Parameters/>
@@ -81,7 +105,7 @@
     </Nodes>
     <Parameters>
       <Parameter ID="KnbTimeFree" MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
-                 Value="489.1000072881579" DefaultValue="1.0">
+                 Value="500.0000074505805" DefaultValue="1.0">
         <Connections>
           <Connection NodeId="tempo_sync" ParameterId="UnsyncedTime"/>
         </Connections>
@@ -98,23 +122,63 @@
           <Connection NodeId="tempo_sync" ParameterId="Enabled"/>
         </Connections>
       </Parameter>
-      <Parameter ID="KnbRepeats" MinValue="0.0" MaxValue="1.999999955296516" StepSize="0.009999999776482582"
-                 Value="1.319999970495701" DefaultValue="1.0">
-        <Connections/>
-      </Parameter>
-      <Parameter ID="KnbDrift" MinValue="1.0" MaxValue="10.0" StepSize="1.0" Value="1.0">
-        <Connections/>
-      </Parameter>
-      <Parameter ID="KnbInput" MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                 SkewFactor="5.422270774841309" Value="0.0" DefaultValue="1.0">
+      <Parameter ID="KnbRepeats" MinValue="0.0" MaxValue="2.0" StepSize="0.009999999776482582"
+                 Value="0.8599999807775021" DefaultValue="1.0">
         <Connections>
-          <Connection NodeId="gain" ParameterId="Gain"/>
+          <Connection NodeId="faust1" ParameterId="Repeats"/>
         </Connections>
       </Parameter>
-      <Parameter ID="KnbOutput" MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                 SkewFactor="5.422270774841309" Value="0.0" DefaultValue="1.0">
+      <Parameter ID="KnbDrift" MinValue="0.0" MaxValue="10.0" StepSize="0.1000000014901161"
+                 Value="0.2000000029802322" DefaultValue="1.0">
         <Connections>
-          <Connection NodeId="gain1" ParameterId="Gain"/>
+          <Connection NodeId="faust1" ParameterId="DriftIntensity"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="KnbInput" MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                 Value="0.9999999776482582" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="faust1" ParameterId="Input"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="KnbOutput" MinValue="0.0" MaxValue="2.0" StepSize="0.009999999776482582"
+                 Value="0.9999999776482582" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="faust1" ParameterId="Output"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="KnbBass" MinValue="-12.0" MaxValue="12.0" StepSize="0.1000000014901161"
+                 Value="1.788139326608373e-7" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="faust1" ParameterId="BassGain"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="KnbTreble" MinValue="-12.0" MaxValue="12.0" StepSize="0.1000000014901161"
+                 Value="1.788139326608373e-7" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="faust1" ParameterId="TrebleGain"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="KnbDryWet" MinValue="0.0" MaxValue="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="xfader" ParameterId="Value"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="KnbFlutterFreq" MinValue="10.0" MaxValue="30.0" StepSize="0.1000000014901161"
+                 Value="17.20000010728836" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="faust1" ParameterId="FlutterHz"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="KnbFlutterDepth" MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                 Value="0.9999999776482582" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="faust1" ParameterId="FlutterDepth"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="KnbWowDepth" MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                 Value="0.08999999798834324" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="faust1" ParameterId="WowDepth"/>
         </Connections>
       </Parameter>
     </Parameters>

@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/include_juce_audio_formats.mm \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/include_juce_audio_formats.mm \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/ernest/HISE/JUCE/modules/juce_audio_formats/juce_audio_formats.mm \
   /Users/ernest/HISE/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp \
   /Users/ernest/HISE/JUCE/modules/juce_audio_formats/juce_audio_formats.h \
@@ -223,7 +223,6 @@ dependencies: \
   /Users/ernest/HISE/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/bitwriter.c \
   /Users/ernest/HISE/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/include/private/bitwriter.h \
   /Users/ernest/HISE/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/../alloc.h \
-  /Users/ernest/HISE/JUCE/modules/juce_audio_formats/codecs/flac/compat.h \
   /Users/ernest/HISE/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/cpu.c \
   /Users/ernest/HISE/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/crc.c \
   /Users/ernest/HISE/JUCE/modules/juce_audio_formats/codecs/flac/libFLAC/fixed.c \

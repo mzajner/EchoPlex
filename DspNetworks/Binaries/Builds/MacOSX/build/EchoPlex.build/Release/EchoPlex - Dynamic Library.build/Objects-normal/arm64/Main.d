@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/Source/Main.cpp \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/Source/Main.cpp \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/ernest/HISE/hi_dsp_library/hi_dsp_library.h \
   /Users/ernest/HISE/hi_dsp_library/../hi_tools/hi_tools.h \
   /Users/ernest/HISE/hi_dsp_library/../hi_tools/../JUCE/modules/juce_core/juce_core.h \
@@ -683,16 +683,12 @@ dependencies: \
   /Users/ernest/HISE/hi_faust/FaustUI.h \
   /Users/ernest/HISE/hi_faust/FaustWrapper.h \
   /Users/ernest/HISE/hi_faust/FaustStaticWrapper.h \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/Source/includes.h \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/Source/greyhole.h \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/Source/../../ThirdParty/greyhole.h \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/Source/../../ThirdParty/src/greyhole.cpp \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/Source/vitalRev.h \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/Source/../../ThirdParty/vitalRev.h \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/Source/../../ThirdParty/src/vitalRev.cpp \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/Source/Fx1_ScriptFx.h \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/Source/Fx2_ScriptFx.h \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/JuceHeader.h \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/Source/includes.h \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/Source/Echoplex_Faust.h \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/Source/../../ThirdParty/Echoplex_Faust.h \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/Source/../../ThirdParty/src/Echoplex_Faust.cpp \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/Source/Echoplex_ScriptFx.h \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/JuceHeader.h \
   /Users/ernest/HISE/hi_faust_types/hi_faust_types.h \
   /Users/ernest/HISE/hi_tools/hi_tools.h \
   /Users/ernest/HISE/JUCE/modules/juce_dsp/juce_dsp.h

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<Network ID="Test" AllowPolyphonic="1" CompileChannelAmount="24" Version="0.0.0">
-  <Node FactoryPath="container.chain" ID="Test" Bypassed="0" Name="Test">
-    <Nodes/>
-    <Parameters/>
-  </Node>
-</Network>

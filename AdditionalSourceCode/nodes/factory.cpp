@@ -25,12 +25,10 @@ struct Factory: public scriptnode::dll::StaticLibraryHostFactory
 	Factory()
 	{
 		TempoSyncer::initTempoData();
-		// Node registrations ---------------------------------------------------------------------
+		// Node registrations ----------------------------------------------------------------------
 		
-		registerPolyNode<project::vitalRev<1>, wrap::illegal_poly<project::vitalRev<1>>>();
-		registerPolyNode<project::greyhole<1>, wrap::illegal_poly<project::greyhole<1>>>();
-		registerPolyNode<project::Fx1_ScriptFx<1>, wrap::illegal_poly<project::Fx1_ScriptFx<1>>>();
-		registerPolyNode<project::Fx2_ScriptFx<1>, wrap::illegal_poly<project::Fx2_ScriptFx<1>>>();
+		registerPolyNode<project::Echoplex_Faust<1>, wrap::illegal_poly<project::Echoplex_Faust<1>>>();
+		registerPolyNode<project::Echoplex_ScriptFx<1>, wrap::illegal_poly<project::Echoplex_ScriptFx<1>>>();
 	}
 };
 }

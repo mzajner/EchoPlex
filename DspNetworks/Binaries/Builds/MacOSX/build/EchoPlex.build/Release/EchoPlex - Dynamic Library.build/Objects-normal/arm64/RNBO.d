@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/Source/RNBO.cpp
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/Source/RNBO.cpp

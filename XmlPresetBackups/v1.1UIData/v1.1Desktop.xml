@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptPanel" id="pnl_Bg" x="0.0" y="0.0" width="820.0"
+             height="590.0" itemColour="4289440683" itemColour2="4283585106"/>
+  <Component type="ScriptImage" id="img_Box" x="0.0" y="0.0" width="820.0"
+             height="584.0" fileName="{PROJECT_FOLDER}Box.png" locked="1"/>
+  <Component type="ScriptPanel" id="pnl_Leds" x="418.0" y="353.0" width="100.0"
+             height="40.0" bgColour="16777215" itemColour="0" itemColour2="0"
+             textColour="16777215">
+    <Component type="ScriptPanel" id="pnl_Led1" x="10.0" y="14.0" width="12.0"
+               height="12.0" itemColour="1983461689" itemColour2="4294960384"
+               parentComponent="pnl_Leds"/>
+    <Component type="ScriptPanel" id="pnl_Led2" x="32.0" y="14.0" width="12.0"
+               height="12.0" itemColour="792279353" itemColour2="4278255386"
+               parentComponent="pnl_Leds"/>
+    <Component type="ScriptPanel" id="pnl_Led3" x="54.0" y="14.0" width="12.0"
+               height="12.0" itemColour="792279353" itemColour2="4278255386"
+               parentComponent="pnl_Leds"/>
+    <Component type="ScriptPanel" id="pnl_Led4" x="76.0" y="14.0" width="12.0"
+               height="12.0" itemColour="792279353" itemColour2="4294910720"
+               parentComponent="pnl_Leds"/>
+  </Component>
+  <Component type="ScriptSlider" id="knb_Time" x="360.0" y="197.0" filmstripImage="{PROJECT_FOLDER}Slider.png"
+             numStrips="60.0" isVertical="0" dragDirection="Horizontal" width="250.0"
+             height="50.0" scaleFactor="0.5" mouseSensitivity="0.75" showTextBox="0"
+             max="1000.0"/>
+  <Component type="ScriptSlider" id="knb_Needle" x="360.0" y="275.0" filmstripImage="{PROJECT_FOLDER}Needle.png"
+             numStrips="60.0" isVertical="0" dragDirection="Horizontal" width="250.0"
+             height="40.0" mouseSensitivity="0.75" max="1000.0" scaleFactor="0.5"
+             showTextBox="0"/>
+  <Component type="ScriptSlider" id="knb_Repeats" x="104.0" y="330.0" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
+             numStrips="60.0" width="90.0" height="90.0" scaleFactor="0.5"
+             showTextBox="0" max="2.0" processorId="Echoplex" parameterId="KnbRepeats"/>
+  <Component type="ScriptSlider" id="knb_Dry" x="198.0" y="330.0" mode="Decibel"
+             min="-100.0" max="0.0" stepSize="0.1000000014901161" suffix=" dB"
+             middlePosition="-18.0" width="90.0" height="90.0" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
+             numStrips="60.0" scaleFactor="0.5" showTextBox="0" processorId="Echoplex"
+             parameterId="KnbInput"/>
+  <Component type="ScriptSlider" id="knb_Wet" x="292.0" y="330.0" mode="Decibel"
+             min="-100.0" max="0.0" stepSize="0.1000000014901161" suffix=" dB"
+             middlePosition="-18.0" width="90.0" height="90.0" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
+             numStrips="60.0" scaleFactor="0.5" showTextBox="0"/>
+  <Component type="ScriptSlider" id="knb_Treble" x="529.0" y="330.0" width="90.0"
+             height="90.0" filmstripImage="{PROJECT_FOLDER}KnobMain.png" numStrips="60.0"
+             scaleFactor="0.5" showTextBox="0" processorId="Echoplex" parameterId="KnbTreble"/>
+  <Component type="ScriptSlider" id="knb_Bass" x="621.0" y="330.0" width="90.0"
+             height="90.0" filmstripImage="{PROJECT_FOLDER}KnobMain.png" numStrips="60.0"
+             scaleFactor="0.5" showTextBox="0" processorId="Echoplex" parameterId="KnbBass"/>
+</ContentProperties>

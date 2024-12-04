@@ -9,13 +9,11 @@
 
 // Include third party header files ----------------
 
-#include "greyhole.h"
-#include "vitalRev.h"
+#include "Echoplex_Faust.h"
 
 // Include compiled network files ------------------
 
-#include "Fx1_ScriptFx.h"
-#include "Fx2_ScriptFx.h"
+#include "Echoplex_ScriptFx.h"
 
 #if (defined (_WIN32) || defined (_WIN64))
 #pragma warning( pop )

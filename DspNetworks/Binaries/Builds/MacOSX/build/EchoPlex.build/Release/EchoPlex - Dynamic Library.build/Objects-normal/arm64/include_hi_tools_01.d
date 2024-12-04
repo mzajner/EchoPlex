@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/include_hi_tools_01.cpp \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/include_hi_tools_01.cpp \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/ernest/HISE/hi_tools/hi_tools_01.cpp \
   /Users/ernest/HISE/hi_tools/hi_tools.h \
   /Users/ernest/HISE/hi_tools/../JUCE/modules/juce_core/juce_core.h \
@@ -605,7 +605,7 @@ dependencies: \
   /Users/ernest/HISE/hi_tools/hi_tools/HiseEventBuffer.cpp \
   /Users/ernest/HISE/hi_tools/hi_tools/MiscToolClasses.cpp \
   /Users/ernest/HISE/hi_tools/hi_dispatch/hi_dispatch.cpp \
-  /Users/ernest/Documents/HISE\ Projects/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/JuceHeader.h \
+  /Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/Binaries/JuceLibraryCode/JuceHeader.h \
   /Users/ernest/HISE/hi_dsp_library/hi_dsp_library.h \
   /Users/ernest/HISE/hi_dsp_library/../hi_tools/hi_tools.h \
   /Users/ernest/HISE/hi_dsp_library/../JUCE/modules/juce_core/juce_core.h \
@@ -729,87 +729,93 @@ dependencies: \
   /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../config.h \
   /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/activation_xsimd.h \
   /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../common.h \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/xsimd.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/xsimd_config.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/xsimd_scalar.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/memory/xsimd_aligned_allocator.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/memory/../config/xsimd_arch.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_all_registers.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_fma3_sse_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_sse4_2_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_sse4_1_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_ssse3_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_sse3_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_sse2_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_generic_arch.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/../config/xsimd_config.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_fma4_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_sse2_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_sse3_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_sse4_1_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_sse4_2_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_avx2_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_avx_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_avx_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_fma3_avx2_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_avx2_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_fma3_avx_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_avx512bw_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_avx512dq_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_avx512cd_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_avx512f_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_avx512cd_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_avx512dq_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_avx512f_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_neon64_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_neon_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_generic_arch.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_sve_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/./xsimd_config.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/./xsimd_cpuid.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/types/xsimd_batch.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/../config/xsimd_arch.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/../memory/xsimd_alignment.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/memory/../types/xsimd_utils.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_utils.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/../arch/xsimd_isa.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/../config/xsimd_arch.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./xsimd_generic_fwd.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/../types/xsimd_batch_constant.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_batch.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./xsimd_neon.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/../types/xsimd_neon_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/../types/xsimd_utils.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./xsimd_neon64.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/../types/xsimd_neon64_register.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./xsimd_generic.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/xsimd_generic_arithmetic.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/./xsimd_generic_details.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/../../math/xsimd_rem_pio2.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/../../types/xsimd_generic_arch.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/../../types/xsimd_utils.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/../xsimd_constants.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/xsimd_generic_complex.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/xsimd_generic_logical.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/xsimd_generic_math.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/../xsimd_scalar.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/./xsimd_generic_trigo.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/xsimd_generic_memory.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/../../types/xsimd_batch_constant.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/xsimd_generic_rounding.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/arch/./generic/xsimd_generic_trigo.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_batch_constant.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/./xsimd_traits.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/xsimd_batch.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/types/xsimd_batch_constant.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/types/xsimd_traits.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/types/xsimd_api.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/../types/xsimd_batch.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/../modules/xsimd/config/../types/../types/xsimd_traits.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/xsimd-legacy/algorithms/algorithms.hpp \
-  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/xsimd-legacy/algorithms/../../../modules/xsimd/types/xsimd_api.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/xsimd.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/config/xsimd_config.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/arch/xsimd_scalar.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/xsimd_aligned_allocator.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/xsimd_arch.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_all_registers.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_fma3_sse_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/./xsimd_sse4_2_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/././xsimd_sse4_1_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/./././xsimd_ssse3_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/././././xsimd_sse3_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/./././././xsimd_sse2_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/././././././xsimd_generic_arch.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/././././././../config/xsimd_config.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/././././././xsimd_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_fma4_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_sse2_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_sse3_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_sse4_1_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_sse4_2_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_avx2_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/./xsimd_avx_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/././xsimd_generic_arch.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_avx_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_fma3_avx2_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/./xsimd_avx2_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_fma3_avx_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_avx512bw_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/./xsimd_avx512dq_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/././xsimd_avx512cd_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/./././xsimd_avx512f_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/././././xsimd_generic_arch.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_avx512cd_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_avx512dq_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_avx512f_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_neon64_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_neon_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_generic_arch.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/../types/xsimd_sve_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/./xsimd_config.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/./xsimd_cpuid.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/memory/../config/./../types/xsimd_all_registers.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/xsimd_batch.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../config/xsimd_arch.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../memory/xsimd_alignment.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../memory/../types/xsimd_utils.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../memory/xsimd_aligned_allocator.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/./xsimd_utils.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/xsimd_isa.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/../config/xsimd_arch.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/./xsimd_generic_fwd.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/./../types/xsimd_batch_constant.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/./../types/./xsimd_batch.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/./../types/./xsimd_utils.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/./xsimd_neon.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/./../types/xsimd_neon_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/./../types/xsimd_utils.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/./xsimd_neon64.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/./../types/xsimd_neon64_register.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/./xsimd_generic.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/xsimd_generic_arithmetic.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/./xsimd_generic_details.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/./../../math/xsimd_rem_pio2.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/./../../types/xsimd_generic_arch.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/./../../types/xsimd_utils.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/./../xsimd_constants.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/xsimd_generic_complex.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/xsimd_generic_logical.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/xsimd_generic_math.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/../xsimd_scalar.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/./xsimd_generic_trigo.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/././xsimd_generic_details.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/xsimd_generic_memory.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/../../types/xsimd_batch_constant.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/xsimd_generic_rounding.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../arch/././generic/xsimd_generic_trigo.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/./xsimd_batch_constant.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/./xsimd_traits.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/./xsimd_batch.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/xsimd_batch_constant.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/xsimd_traits.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/xsimd_api.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../types/xsimd_batch.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../../modules/xsimd/types/../types/xsimd_traits.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../xsimd-legacy/algorithms/algorithms.hpp \
+  /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../xsimd-legacy/algorithms/../../../modules/xsimd/types/xsimd_api.hpp \
   /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/activation/../maths/maths_xsimd.h \
   /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/batchnorm/batchnorm.h \
   /Users/ernest/HISE/hi_tools/hi_neural/RTNeural/RTNeural/batchnorm/batchnorm_xsimd.h \
