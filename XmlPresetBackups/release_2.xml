@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Processor Type="SynthChain" ID="development_1" Bypassed="0" Gain="1.0"
-           Balance="0.0" VoiceLimit="64.0" KillFadeTime="20.0" IconColour="0"
-           packageName="" BuildVersion="650">
+<Processor Type="SynthChain" ID="release_2" Bypassed="0" Gain="1.0" Balance="0.0"
+           VoiceLimit="64.0" KillFadeTime="20.0" IconColour="0" packageName=""
+           BuildVersion="650">
   <ChildProcessors>
     <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
       <ChildProcessors>
@@ -19,12 +19,12 @@
             <Control type="ScriptButton" id="btn_Enable" value="0.0"/>
             <Control type="ScriptButton" id="btn_Playback" value="1.0"/>
             <Control type="ScriptButton" id="btn_Enable1" value="0.0"/>
-            <Control type="ScriptSlider" id="knb_FlutDepth" value="0.0"/>
-            <Control type="ScriptSlider" id="knb_FlutFreq" value="0.5"/>
-            <Control type="ScriptSlider" id="knb_WowDepth" value="0.5"/>
+            <Control type="ScriptSlider" id="knb_FlutDepth" value="0.4699999988079071"/>
+            <Control type="ScriptSlider" id="knb_FlutFreq" value="15.0"/>
+            <Control type="ScriptSlider" id="knb_WowDepth" value="0.1000000014901161"/>
             <Control type="ScriptSlider" id="knb_WowFreq" value="0.5"/>
             <Control type="ScriptSlider" id="knb_DryWet" value="0.5"/>
-            <Control type="ScriptSlider" id="knb_Tempo" value="0.0"/>
+            <Control type="ScriptSlider" id="knb_Tempo" value="7.0"/>
           </Content>
           <Networks>
             <Network ID="Echoplex_ScriptFx" Version="0.0.0" AllowCompilation="1"/>
@@ -43,7 +43,7 @@
               </Node>
             </Network>
           </Networks>
-          <UIData Source="development_1UIData"/>
+          <UIData Source="release_2UIData"/>
         </Processor>
       </ChildProcessors>
     </Processor>
@@ -74,65 +74,14 @@
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
         <Processor Type="Hardcoded Master FX" ID="Echoplex" Bypassed="0" Network="Echoplex_ScriptFx"
-                   KnbTimeFree="585.0" KnbTimeSync="0.0" BtnSync="0.0" KnbRepeats="0.0"
+                   KnbTimeFree="585.0" KnbTimeSync="7.0" BtnSync="0.0" KnbRepeats="0.0"
                    KnbDrift="0.2000000029802322" KnbInput="0.0" KnbOutput="1.0"
-                   KnbBass="-9.100000381469727" KnbTreble="0.0" KnbDryWet="1.0"
-                   KnbFlutterFreq="20.10000038146973" KnbFlutterDepth="0.09999999403953552"
-                   KnbWowDepth="0.3299999833106995">
+                   KnbBass="-9.100000381469727" KnbTreble="0.0" KnbDryWet="0.5"
+                   KnbFlutterFreq="15.0" KnbFlutterDepth="0.4699999988079071" KnbWowDepth="0.1000000014901161">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
-        <Processor Type="ScriptFX" ID="Script FX1" Bypassed="1">
-          <ChildProcessors/>
-          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
-          <Content/>
-          <Networks>
-            <Network ID="Echoplex_ScriptFx" Version="0.0.0" AllowCompilation="1"/>
-          </Networks>
-          <UIData>
-            <ContentProperties DeviceType="Desktop"/>
-          </UIData>
-        </Processor>
       </ChildProcessors>
-    </Processor>
-    <Processor Type="WaveSynth" ID="Waveform Generator1" Bypassed="0" Gain="0.25"
-               Balance="0.0" VoiceLimit="256.0" KillFadeTime="20.0" IconColour="0"
-               OctaveTranspose1="0.0" SemiTones1="0.0" OctaveTranspose2="0.0"
-               SemiTones2="0.0" Detune1="0.0" Detune2="0.0" WaveForm1="1.0"
-               WaveForm2="1.0" Pan1="0.0" Pan2="0.0" Mix="0.5" EnableSecondOscillator="1.0"
-               PulseWidth1="0.5" PulseWidth2="0.5" HardSync="0.0">
-      <ChildProcessors>
-        <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
-          <ChildProcessors/>
-        </Processor>
-        <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1.0">
-          <ChildProcessors>
-            <Processor Type="SimpleEnvelope" ID="DefaultEnvelope1" Bypassed="0" Monophonic="0.0"
-                       Retrigger="1.0" Intensity="1.0" Attack="5.0" Release="10.0" LinearMode="1.0">
-              <ChildProcessors>
-                <Processor Type="ModulatorChain" ID="Attack Time Modulation" Bypassed="0"
-                           Intensity="1.0">
-                  <ChildProcessors/>
-                </Processor>
-              </ChildProcessors>
-            </Processor>
-          </ChildProcessors>
-        </Processor>
-        <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="0" Intensity="0.0">
-          <ChildProcessors/>
-        </Processor>
-        <Processor Type="EffectChain" ID="FX" Bypassed="0">
-          <ChildProcessors/>
-        </Processor>
-        <Processor Type="ModulatorChain" ID="Mix Modulation" Bypassed="0" Intensity="1.0">
-          <ChildProcessors/>
-        </Processor>
-        <Processor Type="ModulatorChain" ID="Osc2 Pitch Modulation" Bypassed="0"
-                   Intensity="0.0">
-          <ChildProcessors/>
-        </Processor>
-      </ChildProcessors>
-      <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
     </Processor>
   </ChildProcessors>
   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>

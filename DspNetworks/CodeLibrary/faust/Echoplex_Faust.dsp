@@ -132,9 +132,9 @@ delayFunction(n, d, x) = x @ min(n, max(0, d));  // Delays the input signal by d
 feedback(x) = (x : tapeSaturation + x ~ (delay * repeats)) : playbackHeadEQ : toneControl
  //Implements feedback by looping the delayed signal back into the input with added saturation and filtering
 with {
-    //tapeSat = co.limiter_1176_R4_mono;  // Tape saturation limiter
+    tapeSat = co.limiter_1176_R4_mono;  // Tape saturation limiter
     delay = delayFunction(50000, delayProcessed, x);  // Applies calculated delay
-    //filter = fi.lowpass(2, 7000);  // Low-pass filter to emulate tape frequency response
+    filter = fi.lowpass(2, 7000);  // Low-pass filter to emulate tape frequency response
 };
 
 // ================== Output Signal Processing ==================

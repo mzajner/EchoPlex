@@ -312,7 +312,7 @@ Content.getComponent("knb_Wet").setControlCallback(onknb_WetControl);
 
 inline function onbtn_PlaybackControl(component, value)
 {
-	pnl_Advanced.showControl(value);
+	pnl_Advanced.set("visible", value);
 };
 
 Content.getComponent("btn_Playback").setControlCallback(onbtn_PlaybackControl);

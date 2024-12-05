@@ -64,30 +64,34 @@
     <Component type="ScriptButton" id="btn_Enable1" x="570" y="45" filmstripImage="{PROJECT_FOLDER}Switch.png"
                scaleFactor="0.300000011920929" width="50.0" height="32.0" processorId="Echoplex"
                parameterId="BtnSync" parentComponent="pnl_Advanced"/>
+    <Component type="ScriptSlider" id="knb_FlutDepth" x="5" y="20" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
+               numStrips="60.0" width="90.0" height="90.0" scaleFactor="0.5"
+               showTextBox="0" middlePosition="0.5" showValuePopup="Below" defaultValue="0.5"
+               processorId="Echoplex" parameterId="KnbFlutterDepth" parentComponent="pnl_Advanced"
+               mode="NormalizedPercentage" suffix="%"/>
+    <Component type="ScriptSlider" id="knb_FlutFreq" x="100" y="20" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
+               numStrips="60.0" width="90.0" height="90.0" scaleFactor="0.5"
+               showTextBox="0" middlePosition="20.0" showValuePopup="Below"
+               defaultValue="15.0" processorId="Echoplex" min="10.0" max="30.0"
+               parentComponent="pnl_Advanced" parameterId="KnbFlutterFreq"/>
+    <Component type="ScriptSlider" id="knb_WowDepth" x="193" y="20" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
+               numStrips="60.0" width="90.0" height="90.0" scaleFactor="0.5"
+               showTextBox="0" middlePosition="0.5" showValuePopup="Below" defaultValue="0.1000000014901161"
+               processorId="Echoplex" parentComponent="pnl_Advanced" mode="NormalizedPercentage"
+               suffix="%" parameterId="KnbWowDepth"/>
+    <Component type="ScriptSlider" id="knb_WowFreq" x="286" y="20" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
+               numStrips="60.0" width="90.0" height="90.0" scaleFactor="0.5"
+               showTextBox="0" middlePosition="0.5" showValuePopup="Below" defaultValue="0.5"
+               processorId="Echoplex" parentComponent="pnl_Advanced"/>
+    <Component type="ScriptSlider" id="knb_DryWet" x="380" y="20" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
+               numStrips="60.0" width="90.0" height="90.0" scaleFactor="0.5"
+               showTextBox="0" middlePosition="0.5" showValuePopup="Below" defaultValue="0.5"
+               processorId="Echoplex" parentComponent="pnl_Advanced" mode="NormalizedPercentage"
+               suffix="%" parameterId="KnbDryWet"/>
+    <Component type="ScriptSlider" id="knb_Tempo" x="475" y="20" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
+               numStrips="60.0" width="90.0" height="90.0" scaleFactor="0.5"
+               showTextBox="0" middlePosition="9.0" showValuePopup="Below" defaultValue="4.0"
+               processorId="Echoplex" parameterId="KnbTimeSync" mode="TempoSync"
+               max="18.0" stepSize="1.0" parentComponent="pnl_Advanced"/>
   </Component>
-  <Component type="ScriptSlider" id="knb_FlutDepth" x="55.0" y="50.0" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
-             numStrips="60.0" width="90.0" height="90.0" scaleFactor="0.5"
-             showTextBox="0" middlePosition="0.5" showValuePopup="Below" defaultValue="0.5"
-             processorId="Echoplex" parameterId="KnbFlutterDepth"/>
-  <Component type="ScriptSlider" id="knb_FlutFreq" x="150.0" y="50.0" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
-             numStrips="60.0" width="90.0" height="90.0" scaleFactor="0.5"
-             showTextBox="0" middlePosition="20.0" showValuePopup="Below"
-             defaultValue="15.0" processorId="Echoplex" min="10.0" max="30.0"/>
-  <Component type="ScriptSlider" id="knb_WowDepth" x="243.0" y="50.0" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
-             numStrips="60.0" width="90.0" height="90.0" scaleFactor="0.5"
-             showTextBox="0" middlePosition="0.5" showValuePopup="Below" defaultValue="0.1000000014901161"
-             processorId="Echoplex"/>
-  <Component type="ScriptSlider" id="knb_WowFreq" x="336.0" y="50.0" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
-             numStrips="60.0" width="90.0" height="90.0" scaleFactor="0.5"
-             showTextBox="0" middlePosition="0.5" showValuePopup="Below" defaultValue="0.5"
-             processorId="Echoplex"/>
-  <Component type="ScriptSlider" id="knb_DryWet" x="430.0" y="50.0" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
-             numStrips="60.0" width="90.0" height="90.0" scaleFactor="0.5"
-             showTextBox="0" middlePosition="0.5" showValuePopup="Below" defaultValue="0.5"
-             processorId="Echoplex"/>
-  <Component type="ScriptSlider" id="knb_Tempo" x="525.0" y="50.0" filmstripImage="{PROJECT_FOLDER}KnobMain.png"
-             numStrips="60.0" width="90.0" height="90.0" scaleFactor="0.5"
-             showTextBox="0" middlePosition="9.0" showValuePopup="Below" defaultValue="4.0"
-             processorId="Echoplex" parameterId="KnbTimeSync" mode="TempoSync"
-             max="18.0" stepSize="1.0"/>
 </ContentProperties>

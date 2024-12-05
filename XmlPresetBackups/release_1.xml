@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Processor Type="SynthChain" ID="release_1" Bypassed="0" Gain="1.0" Balance="0.0"
+           VoiceLimit="64.0" KillFadeTime="20.0" IconColour="0" packageName=""
+           BuildVersion="650">
+  <ChildProcessors>
+    <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+      <ChildProcessors>
+        <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
+          <ChildProcessors/>
+          <Content>
+            <Control type="ScriptSlider" id="knb_Time" value="300.0"/>
+            <Control type="ScriptSlider" id="knb_Needle" value="300.0"/>
+            <Control type="ScriptSlider" id="knb_Repeats" value="0.5"/>
+            <Control type="ScriptSlider" id="knb_Dry" value="1.0"/>
+            <Control type="ScriptSlider" id="knb_Wet" value="0.5"/>
+            <Control type="ScriptSlider" id="knb_Treble" value="0.0"/>
+            <Control type="ScriptSlider" id="knb_Bass" value="0.0"/>
+            <Control type="ScriptButton" id="btn_Enable" value="0.0"/>
+            <Control type="ScriptButton" id="btn_Playback" value="1.0"/>
+          </Content>
+          <Networks>
+            <Network ID="Echoplex_ScriptFx" Version="0.0.0" AllowCompilation="1"/>
+            <Network ID="Echoplex_ScriptFx" Version="0.0.0" AllowCompilation="1"/>
+            <Network ID="Echoplex" Version="0.0.0">
+              <Node FactoryPath="container.chain" ID="Echoplex" Bypassed="0" Name="Echoplex">
+                <Nodes/>
+                <Parameters/>
+              </Node>
+            </Network>
+            <Network ID="Echoplex_Sc.xml" Version="0.0.0">
+              <Node FactoryPath="container.chain" ID="Echoplex_Sc.xml" Bypassed="0"
+                    Name="Echoplex_Sc.xml">
+                <Nodes/>
+                <Parameters/>
+              </Node>
+            </Network>
+          </Networks>
+          <UIData Source="release_1UIData"/>
+        </Processor>
+      </ChildProcessors>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1.0">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="1" Intensity="0.0">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="EffectChain" ID="FX" Bypassed="0">
+      <ChildProcessors>
+        <Processor Type="SimpleGain" ID="MasterGain" Bypassed="0" Gain="0.0" Delay="0.0"
+                   Width="100.0" Balance="0.0" InvertPolarity="0.0">
+          <ChildProcessors>
+            <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Delay Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Width Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Pan Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+          </ChildProcessors>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
+        <Processor Type="Hardcoded Master FX" ID="Echoplex" Bypassed="0" Network="Echoplex_ScriptFx"
+                   KnbTimeFree="300.0" KnbTimeSync="0.0" BtnSync="0.0" KnbRepeats="0.5"
+                   KnbDrift="0.2000000029802322" KnbInput="0.5" KnbOutput="1.0"
+                   KnbBass="0.0" KnbTreble="0.0" KnbDryWet="1.0" KnbFlutterFreq="15.0"
+                   KnbFlutterDepth="0.4599999785423279" KnbWowDepth="0.3599999845027924">
+          <ChildProcessors/>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
+      </ChildProcessors>
+    </Processor>
+  </ChildProcessors>
+  <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+  <macro_controls>
+    <macro name="Macro 1" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 2" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 3" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 4" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 5" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 6" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 7" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 8" value="0.0" midi_cc="-1"/>
+  </macro_controls>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Processor>

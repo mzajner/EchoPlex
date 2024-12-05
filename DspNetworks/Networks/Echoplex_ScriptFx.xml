@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Network ID="Echoplex_ScriptFx" Version="0.0.0" AllowCompilation="1">
+<Network ID="Echoplex_ScriptFx" Version="0.0.0">
   <Node FactoryPath="container.chain" ID="Echoplex_ScriptFx" Bypassed="0"
         Name="Echoplex_ScriptFx" ShowParameters="1">
     <Nodes>
@@ -147,13 +147,13 @@
         </Connections>
       </Parameter>
       <Parameter ID="KnbBass" MinValue="-12.0" MaxValue="12.0" StepSize="0.1000000014901161"
-                 Value="1.788139326608373e-7" DefaultValue="1.0">
+                 Value="1.78813932549815e-7" DefaultValue="1.0">
         <Connections>
           <Connection NodeId="faust1" ParameterId="BassGain"/>
         </Connections>
       </Parameter>
       <Parameter ID="KnbTreble" MinValue="-12.0" MaxValue="12.0" StepSize="0.1000000014901161"
-                 Value="1.788139326608373e-7" DefaultValue="1.0">
+                 Value="1.78813932549815e-7" DefaultValue="1.0">
         <Connections>
           <Connection NodeId="faust1" ParameterId="TrebleGain"/>
         </Connections>

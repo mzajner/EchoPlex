@@ -7,10 +7,6 @@ const var knb_Time = Content.getComponent("knb_Time");
 const var knb_Needle = Content.getComponent("knb_Needle");
 const var knb_Wet = Content.getComponent("knb_Wet");
 const var knb_Repeats = Content.getComponent("knb_Repeats");
-const var btn_Playback = Content.getComponent("btn_Playback");
-const var pnl_Advanced = Content.getComponent("pnl_Advanced");
-
-
 
 
 const var Echoplex = Synth.getEffect("Echoplex");
@@ -48,9 +44,9 @@ const pnl_Leds = [
 const DECAY_RATE = 0.9;
 const SMOOTHING_FACTOR = 1 - 0.75;
 const SPEED = 30.0;
-const thresholdLed2 = 0.2;
-const thresholdLed3 = 0.5;
-const thresholdLed4 = 0.99;
+const thresholdLed2 = 0.05;
+const thresholdLed3 = 0.1;
+const thresholdLed4 = 0.7;
 reg curLevel = 0.0;
 reg smoothedLevel = 0.0;
 
@@ -65,7 +61,7 @@ inline function cubicInterpolation(start, end, factor) {
 }
 
 
-// LED2 PAINT ROUTINE
+// LED3 PAINT ROUTINE
 pnl_Led3.setPaintRoutine(function(g) {
     var bounds = this.getLocalBounds(0);
 
@@ -213,8 +209,8 @@ pnl_Led4.setPaintRoutine(function(g) {
 // TIMER CALLBACK
 t.setTimerCallback(function() {
     // Get the current gain levels for left and right channels
-    var GainLeft = GainMaster.getCurrentLevel(1);
-    var GainRight = GainMaster.getCurrentLevel(0);
+    var GainLeft = Echoplex.getCurrentLevel(1);
+    var GainRight = Echoplex.getCurrentLevel(0);
 
     // Sum the left and right gain levels
     var combinedGain = (GainLeft + GainRight) * 0.5; // Average the two channels
@@ -307,15 +303,6 @@ inline function onknb_WetControl(component, value)
 };
 
 Content.getComponent("knb_Wet").setControlCallback(onknb_WetControl);
-
-
-
-inline function onbtn_PlaybackControl(component, value)
-{
-	pnl_Advanced.showControl(value);
-};
-
-Content.getComponent("btn_Playback").setControlCallback(onbtn_PlaybackControl);
 
 function onNoteOn()
 {
