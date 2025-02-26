@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'EchoPlex - Dynamic Library' in project 'EchoPlex' (no dependencies)
