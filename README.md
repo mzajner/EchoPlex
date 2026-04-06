@@ -1,8 +1,8 @@
-EchoPlex
+##EchoPlex
 
 EchoPlex is a HISE based delay project centered on a Faust implementation of a tape style Echoplex model. The project combines a custom delay engine, a hardware inspired front panel, and supporting ambience networks for extended spatial processing.
 
-Main Features
+#Main Features
 
 - custom Faust delay model in `DspNetworks/CodeLibrary/faust/Echoplex_Faust.dsp`
 - standalone Echoplex style control layer with free delay time, synced time, feedback, drift, input, output, and wet mix
