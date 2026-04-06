@@ -4,6 +4,8 @@
 
 EchoPlex is a HISE based delay project centered on a MATLAB & Faust implementation of a tape style Echoplex model. The repository combines a custom delay engine, a hardware inspired interface, supporting analog processors, and a documentation set that covers the research and development work behind the project.
 
+For demo and VST3/AU download visit: https://michaelzajner.com/ep4/
+
 ## Read First
 
 Full project context, start here:
