@@ -1,19 +1,21 @@
 # EchoPlex
 
+![EchoPlex](https://github.com/mzajner/EchoPlex/blob/main/Documentation/echoplex-img.png?raw=1)
+
 EchoPlex is a HISE based delay project centered on a MATLAB & Faust implementation of a tape style Echoplex model. The repository combines a custom delay engine, a hardware inspired interface, supporting analog processors, and a documentation set that covers the research and development work behind the project.
 
 ## Read First
 
 Full project context, start here:
 
-- [Research Paper](/Users/ernest/HisePersonal/Personal/EchoPlex/Documentation/echoplex-paper.pdf)
-- [Presentation Slides](/Users/ernest/HisePersonal/Personal/EchoPlex/Documentation/echoplex-slides.pdf)
-- [Matlab Notes](/Users/ernest/HisePersonal/Personal/EchoPlex/Documentation/Matlab/echoplex-matlab.pdf)
-- [Audio Examples](/Users/ernest/HisePersonal/Personal/EchoPlex/Documentation/Matlab/AudioExamples)
+- [Research Paper](https://github.com/mzajner/EchoPlex/blob/main/Documentation/echoplex-paper.pdf)
+- [Presentation Slides](https://github.com/mzajner/EchoPlex/blob/main/Documentation/echoplex-slides.pdf)
+- [Matlab Notes](https://github.com/mzajner/EchoPlex/blob/main/Documentation/Matlab/echoplex-matlab.pdf)
+- [Audio Examples](https://github.com/mzajner/EchoPlex/tree/main/Documentation/Matlab/AudioExamples)
 
 ## Main Features
 
-- Custom Faust delay model in [Echoplex_Faust.dsp](/Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/CodeLibrary/faust/Echoplex_Faust.dsp)
+- Custom Faust delay model in [Echoplex_Faust.dsp](https://github.com/mzajner/EchoPlex/blob/main/DspNetworks/CodeLibrary/faust/Echoplex_Faust.dsp)
 - Standalone Echoplex style control layer with free delay time, synced time, feedback, drift, input, output, and wet mix
 - Multi component wow and flutter style modulation built from several low frequency drift terms plus a dedicated flutter term
 - Tape inspired non linear saturation and playback head filtering inside the feedback path
@@ -22,7 +24,7 @@ Full project context, start here:
 
 ## DSP Architecture
 
-The core signal path lives in [Echoplex_Faust.dsp](/Users/ernest/HisePersonal/Personal/EchoPlex/DspNetworks/CodeLibrary/faust/Echoplex_Faust.dsp).
+The core signal path lives in [Echoplex_Faust.dsp](https://github.com/mzajner/EchoPlex/blob/main/DspNetworks/CodeLibrary/faust/Echoplex_Faust.dsp).
 
 Key implementation details:
 
@@ -51,7 +53,7 @@ Main exposed parameters in the Faust model:
 
 ## Interface Notes
 
-The current front end lives in [Interface.js](/Users/ernest/HisePersonal/Personal/EchoPlex/Scripts/ScriptProcessors/v10/Interface.js).
+The current front end lives in [Interface.js](https://github.com/mzajner/EchoPlex/blob/main/Scripts/ScriptProcessors/v10/Interface.js).
 
 The interface work is designed to reflect playback state in a hardware style presentation:
 
@@ -62,18 +64,18 @@ The interface work is designed to reflect playback state in a hardware style pre
 
 ## Documentation
 
-The [Documentation](/Users/ernest/HisePersonal/Personal/EchoPlex/Documentation) folder should be treated as part of the project itself, not as an extra archive.
+The [Documentation](https://github.com/mzajner/EchoPlex/tree/main/Documentation) folder should be treated as part of the project itself, not as an extra archive.
 
-- [Research Paper](/Users/ernest/HisePersonal/Personal/EchoPlex/Documentation/echoplex-paper.pdf)
+- [Research Paper](https://github.com/mzajner/EchoPlex/blob/main/Documentation/echoplex-paper.pdf)
   Project paper covering the design goals and model.
 
-- [Presentation Slides](/Users/ernest/HisePersonal/Personal/EchoPlex/Documentation/echoplex-slides.pdf)
+- [Presentation Slides](https://github.com/mzajner/EchoPlex/blob/main/Documentation/echoplex-slides.pdf)
   Slide deck for presenting the project.
 
-- [Matlab Notes](/Users/ernest/HisePersonal/Personal/EchoPlex/Documentation/Matlab/echoplex-matlab.pdf)
+- [Matlab Notes](https://github.com/mzajner/EchoPlex/blob/main/Documentation/Matlab/echoplex-matlab.pdf)
   Supporting Matlab material connected to the analysis and DSP work.
 
-- [Audio Examples](/Users/ernest/HisePersonal/Personal/EchoPlex/Documentation/Matlab/AudioExamples)
+- [Audio Examples](https://github.com/mzajner/EchoPlex/tree/main/Documentation/Matlab/AudioExamples)
   Rendered examples including comb, drift, impulse, modulation, and sine sweep material.
 
 - [EP4 Portfolio page](https://michaelzajner.com/ep4/)
@@ -88,4 +90,4 @@ The easiest way to build this project is from inside HISE:
 
 ## License
 
-This repository is released under GPL 3.0. See [LICENSE](/Users/ernest/HisePersonal/Personal/EchoPlex/LICENSE).
+This repository is released under GPL 3.0. See [LICENSE](https://github.com/mzajner/EchoPlex/blob/main/LICENSE).
