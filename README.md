@@ -76,11 +76,7 @@ The [Documentation](/Users/ernest/HisePersonal/Personal/EchoPlex/Documentation) 
 - [Audio Examples](/Users/ernest/HisePersonal/Personal/EchoPlex/Documentation/Matlab/AudioExamples)
   Rendered examples including comb, drift, impulse, modulation, and sine sweep material.
 
-## Historical Reference
-
-This project sits in the EP4 style Echoplex delay lineage. A useful public reference for the original hardware family is:
-
-- [Michael Zajner EP4 page](https://michaelzajner.com/ep4/)
+- [EP4 Portfolio page](https://michaelzajner.com/ep4/)
 
 ## Build
 
